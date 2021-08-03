@@ -1,0 +1,16 @@
+.feedback-card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: left;
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+}
