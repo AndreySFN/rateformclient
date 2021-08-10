@@ -17,6 +17,7 @@ const CommentsBrowser = () => {
             comment={comment.feedback}
             rate={comment.rate}
             datetime={comment.serverDateTime}
+            user={comment.user}
         />) : <span>Комментарии не найдены</span>}
     </div>
 }

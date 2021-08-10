@@ -3,4 +3,5 @@ export interface CommentsDto {
     serverDateTime: string;
     feedback: string;
     rate: number;
+    user: number;
 }
