@@ -1,40 +1,97 @@
 .feedback-form {
+  background-image: url('../resources/img/background.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+  text-align: center;
+
+  * {
+    outline:none!important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .white-container{
+    border-radius: 25px;
+    background-color: white;
+    margin: 5vh 0;
+    padding: 5vh;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1, h2 {
+    color: white;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  %common-button {
+    color: white;
+    border-radius: 50px;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+  }
+  .solid-button {
+    @extend %common-button;
+    border: none;
+    background-color: #4165F2;
+  }
+
+  .primary-button {
+    @extend %common-button;
+    border: 3px solid #4165F2;
+  }
+
+  .secondary-button {
+    @extend %common-button;
+    border: 3px solid white;
+  }
 
   &__rate {
     font-size: 5vw;
     text-align: center;
   }
 
-  &__name-input, &__comment-input {
+  &__name-input, &__comment-input, &__employer-name-input {
     width: 80%;
     margin: 20px;
   }
 
-  &__name-input {
+  &__name-input, &__employer-name-input,  &__comment-input {
+    border-radius: 10px;
+    font-size: 150%;
+  }
+
+  &__name-input, &__employer-name-input {
     height: 10%;
-    font-size: 200%;
   }
 
   &__comment-input {
     height: 30%;
-    font-size: 300%;
     resize: none;
   }
 
   &__submit {
-    width: 20vw;
-    font-size: 3vw;
+    width: 25vw;
+    font-size: 4vw;
     color: white;
     background-color: #FC8507;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 

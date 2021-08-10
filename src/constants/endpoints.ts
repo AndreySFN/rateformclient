@@ -1,4 +1,4 @@
-const HOST = 'http://localhost:9090';
+const HOST = 'https://rateformserver.herokuapp.com';
 
 const endpoints = {
     createComment: `${HOST}/createFeedback`,
